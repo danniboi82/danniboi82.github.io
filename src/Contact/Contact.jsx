@@ -10,6 +10,7 @@ import {
     Segment,
     Form,
     TextArea,
+    Icon,
 } from 'semantic-ui-react';
 
 const options = [
@@ -34,13 +35,20 @@ class ContactForm extends Component {
                                     <Form.Input fluid label='Last name' placeholder='Last name' style={{ width: '100%', margin: '15px 0' }} />
                                     <Form.Input fluid label='Email' placeholder='Email' style={{ width: '100%', margin: '15px 0' }} />
                                 </Grid.Column>
-                                <Grid.Column width={8}>
-                                    Connect : Put GITHUB , Linkedin and Twitter Icons here
+                                <Grid.Column width={8} style={{ maxHeight: '100%',   }}>
+                                    <TextArea placeholder='Tell us more' style={{ margin: '0px 0px 50px 0px', height: '109px'}} />
+                                    <Form.Button style={{width: '100%', maxWidth: '100%'}}>Submit</Form.Button>
                                 </Grid.Column>
-
-                                <Grid.Column width={16}>
-                                    <TextArea placeholder='Tell us more' style={{ margin: '25px 0' }} />
-                                    <Form.Button>Submit</Form.Button>
+                            </Grid.Row>
+                            <Grid.Row style={{margin: '50px 0px'}}>
+                                <Grid.Column width={4} style={{ textAlign: 'center' }}>
+                                    <Icon name='github' size='huge' />
+                                </Grid.Column>
+                                <Grid.Column width={8} style={{ textAlign: 'center' }}>
+                                    <Icon name='linkedin' size='huge' />
+                                </Grid.Column>
+                                <Grid.Column width={4} style={{ textAlign: 'center' }}>
+                                    <Icon name='gitlab' size='huge' />
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>

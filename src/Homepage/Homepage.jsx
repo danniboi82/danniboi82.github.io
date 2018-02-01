@@ -24,6 +24,14 @@ export default class HomepageLayout extends Component {
                 <Segment style={{ padding: '8em 0em' }} vertical>
                     <Grid container stackable verticalAlign='middle'>
                         <Grid.Row>
+                            <Grid.Column floated='left' width={6}>
+                                <Image
+                                    bordered
+                                    rounded
+                                    size='large'
+                                    src='https://upload.wikimedia.org/wikipedia/commons/1/1e/Default-avatar.jpg'
+                                />
+                            </Grid.Column>
                             <Grid.Column width={8}>
                                 <Header as='h3' style={{ fontSize: '2em' }}>Intro</Header>
                                 <p style={{ fontSize: '1.33em' }}>
@@ -35,18 +43,10 @@ export default class HomepageLayout extends Component {
                                     Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.
                                 </p>
                             </Grid.Column>
-                            <Grid.Column floated='right' width={6}>
-                                <Image
-                                    bordered
-                                    rounded
-                                    size='large'
-                                    src='https://upload.wikimedia.org/wikipedia/commons/1/1e/Default-avatar.jpg'
-                                />
-                            </Grid.Column>
                         </Grid.Row>
-                        <Grid.Row>
+                        <Grid.Row style={{paddingTop: '7rem'}}>
                             <Grid.Column textAlign='center'>
-                                <Button size='huge'>Check Them Out</Button>
+                                <Button size='huge'>WebDev Portfolio</Button>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
