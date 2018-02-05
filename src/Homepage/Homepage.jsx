@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import profilepic from '../backgroundImage/profilePic.jpg';
 import {
     Button,
     Container,
@@ -10,6 +10,7 @@ import {
     List,
     Segment,
 } from 'semantic-ui-react'
+import codingLogo from '../backgroundImage/technology.svg'
 
 
 
@@ -29,7 +30,7 @@ export default class HomepageLayout extends Component {
                                     bordered
                                     rounded
                                     size='large'
-                                    src='https://upload.wikimedia.org/wikipedia/commons/1/1e/Default-avatar.jpg'
+                                    src={profilepic}
                                 />
                             </Grid.Column>
                             <Grid.Column width={8}>
@@ -44,9 +45,12 @@ export default class HomepageLayout extends Component {
                                 </p>
                             </Grid.Column>
                         </Grid.Row>
+                        <Grid.Row>
+                            <img src={codingLogo} alt="codingLogo" style={{height: '300px', width: '100%'}}/>
+                        </Grid.Row>
                         <Grid.Row style={{paddingTop: '7rem'}}>
                             <Grid.Column textAlign='center'>
-                                <Button size='huge'>WebDev Portfolio</Button>
+                                <Button size='huge'><a href='#Portfolio'>WebDev Portfolio</a></Button>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>

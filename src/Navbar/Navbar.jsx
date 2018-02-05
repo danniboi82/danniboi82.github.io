@@ -10,18 +10,34 @@ import {
     Visibility,
     Grid,
 } from 'semantic-ui-react';
-import './Navbar.css'
+import FontAwesome from 'react-fontawesome';
+import './Navbar.css';
+import BG1 from '../backgroundImage/workstation1.jpg';
+import { Link } from 'react-router-dom';
 
 const FixedMenu = () => (
     <Menu fixed='top' size='large' borderless={true}>
         <Container>
             <Menu.Item>
-                <img src={reactLogo} alt='homepage logo' />
+                <h1>댄오</h1>
             </Menu.Item>
             <Menu.Menu position='right'>
-                <Menu.Item as='a' active>Home</Menu.Item>
-                <Menu.Item as='a'>Portfolio</Menu.Item>
-                <Menu.Item as='a'>Contact</Menu.Item>
+                <Menu.Item active>
+                    <Icon name='home' color='black' />
+                    <a href='#Home'>Home</a>
+                </Menu.Item>
+                <Menu.Item >
+                    <Icon name='user outline' size='small' />
+                    <a href='#About'>About</a>
+                </Menu.Item>
+                <Menu.Item >
+                    <Icon name='code' size='small' />
+                    <a href='#Portfolio'>Portfolio</a>
+                </Menu.Item>
+                <Menu.Item >
+                    <Icon name='mail outline' size='small' />
+                    <a href='#Contact'>Contact</a>
+                </Menu.Item>
             </Menu.Menu>
         </Container>
     </Menu>
@@ -46,42 +62,55 @@ export default class Navbar extends Component {
                     once={false}
                 >
 
-                            <Segment
+                    <Segment
+                        inverted
+                        textAlign='center'
+                        vertical={true}
+                        className='NavbarSeg'
+                        style={{ backgroundImage: `url(${BG1})`, backgroundSize: 'cover', maxWidth: '100%' }}
+                    >
+                        <Container >
+                            <Menu inverted pointing secondary size='large'>
+                                <Menu.Item>
+                                    <h1>댄오</h1>
+                                </Menu.Item>
+                                <Menu.Item position='right'>
+                                    <Menu.Item active>
+                                        <Icon name='home' style={{ position: 'relative', bottom: '2px' }} />
+                                        <a href='#Home'>Home</a>
+                                    </Menu.Item>
+                                    <Menu.Item >
+                                        <Icon name='user outline' size='small' />
+                                        <a href='#About'>About</a>
+                                    </Menu.Item>
+                                    <Menu.Item >
+                                        <Icon name='code' size='small' />
+                                        <a href='#Portfolio'>Portfolio</a>
+                                    </Menu.Item>
+                                    <Menu.Item >
+                                        <Icon name='mail outline' size='small' />
+                                        <a href='#Contact'>Contact</a>
+                                    </Menu.Item>
+                                </Menu.Item>
+                            </Menu>
+                        </Container>
+
+                        <Container text>
+                            <Header
+                                as='h1'
+                                content="Dan Oh"
                                 inverted
-                                textAlign='center'
-                                vertical={true}
-                                className='NavbarSeg'
-                                style={{ backgroundImage: `url(${'https://d31v04zdn5vmni.cloudfront.net/blog/wp-content/uploads/2012/02/featured-image-snippets-1-690x362.png'})`, backgroundSize: '100% 100%', maxWidth: '100%'  }}
-                            >
-                                <Container >
-                                    <Menu inverted pointing secondary size='large'>
-                                        <Menu.Item>
-                                            <img src={reactLogo} alt='homepage logo' />
-                                        </Menu.Item>
-                                        <Menu.Item position='right'>
-                                            <Menu.Item as='a' active>Home</Menu.Item>
-                                            <Menu.Item as='a'>Portfolio</Menu.Item>
-                                            <Menu.Item as='a'>Contact</Menu.Item>
-                                        </Menu.Item>
-                                    </Menu>
-                                </Container>
+                                style={{ fontSize: '4em', fontWeight: 'normal', marginBottom: 0, marginTop: '3em' }}
+                            />
+                            <Header
+                                as='h2'
+                                content='Full Stack Web Developer'
+                                inverted
+                                style={{ fontSize: '1.7em', fontWeight: 'normal' }}
+                            />
 
-                                <Container text>
-                                    <Header
-                                        as='h1'
-                                        content="DanO's HomePage"
-                                        inverted
-                                        style={{ fontSize: '4em', fontWeight: 'normal', marginBottom: 0, marginTop: '3em' }}
-                                    />
-                                    <Header
-                                        as='h2'
-                                        content='Anything is Possible.'
-                                        inverted
-                                        style={{ fontSize: '1.7em', fontWeight: 'normal' }}
-                                    />
-
-                                </Container>
-                            </Segment>
+                        </Container>
+                    </Segment>
                 </Visibility>
             </div>
 
