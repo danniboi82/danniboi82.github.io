@@ -19,7 +19,7 @@ const FixedMenu = () => (
     <Menu fixed='top' size='large' borderless={true}>
         <Container>
             <Menu.Item>
-                <h1>댄오</h1>
+                <h1>ㅇㅎㅊ</h1>
             </Menu.Item>
             <Menu.Menu position='right'>
                 <Menu.Item active>
@@ -72,7 +72,7 @@ export default class Navbar extends Component {
                         <Container >
                             <Menu inverted pointing secondary size='large'>
                                 <Menu.Item>
-                                    <h1>댄오</h1>
+                                    <h1>ㅇㅎㅊ</h1>
                                 </Menu.Item>
                                 <Menu.Item position='right'>
                                     <Menu.Item active>
