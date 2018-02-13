@@ -67,7 +67,7 @@ export default class Navbar extends Component {
                         textAlign='center'
                         vertical={true}
                         className='NavbarSeg'
-                        style={{ backgroundImage: `url(${BG1})`, backgroundSize: 'cover', maxWidth: '100%' }}
+                        style={{ backgroundImage: `url(${BG1})`, backgroundSize: 'cover', maxWidth: '100%', backgroundAttachment: 'fixed' }}
                     >
                         <Container >
                             <Menu inverted pointing secondary size='large'>

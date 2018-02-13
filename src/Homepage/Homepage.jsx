@@ -9,8 +9,9 @@ import {
     Image,
     List,
     Segment,
-} from 'semantic-ui-react'
-import codingLogo from '../backgroundImage/technology.svg'
+} from 'semantic-ui-react';
+import codingLogo from '../backgroundImage/technology.svg';
+import './Homepage.css';
 
 
 
@@ -34,15 +35,22 @@ export default class HomepageLayout extends Component {
                                 />
                             </Grid.Column>
                             <Grid.Column width={8}>
-                                <Header as='h3' style={{ fontSize: '2em' }}>Intro</Header>
-                                <p style={{ fontSize: '1.33em' }}>
-                                    We can give your company superpowers to do things that they never thought possible. Let us delight
-                                    your customers and empower your needs... through pure data analytics.
-                                </p>
-                                <Header as='h3' style={{ fontSize: '2em' }}>Story/Web Development Skills</Header>
-                                <p style={{ fontSize: '1.33em' }}>
-                                    Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.
-                                </p>
+                                <div className='Intro'>
+                                    <Header as='h3' style={{ fontSize: '2em' }}>Who am I?</Header>
+                                    <p style={{ fontSize: '1.33em' }}>
+                                        <b>Hello there?!</b> First, Welcome to my website. I'm a full stack web developer based in Los Angeles, CA, and while I have a wide knowledge base of many languages, frameworks and libraries, I enjoying working in the MERN stack environment. 
+                                        Graduate of UC Irvine's full stack development boot camp program and am eager to use skills acquired, while constantly learning more. Have experience in Google's EWOQ and vehicle multimedia (electrical) engineering at Hyundai. 
+                                    </p>
+                                </div>
+                                <div className='Intro'>
+                                    <Header as='h3' style={{ fontSize: '2em' }}>Web DEV Skills</Header>
+                                    <p style={{ fontSize: '1.33em' }}>
+                                        <div className='IntroP'>Experienced in : </div> 
+                                        <div className='IntroSkills'>HTML, CSS (Less/Sass), JavaScript(ES5, ES6), jQuery, Bootstrap, MERN stack (MongoDB, Express, React, Node), MySQL, Sequelize, Material-UI, Sematic-UI, NPM, GIT, Paypal</div>
+                                        <div className='IntroP'>Currently learning :</div>
+                                        <div className='IntroSkills'> Angular, ES7, Redux, Vue, AWS </div>
+                                    </p>
+                                </div>
                             </Grid.Column>
                         </Grid.Row>
                         <Grid.Row>
