@@ -19,16 +19,22 @@ class ContactForm extends Component {
             <Segment style={{ padding: '8em 0em', minHeight: '800px' }} vertical>
                 <Container>
                     <Grid container stackable verticalAlign='middle'>
-                        <Form style={{ width: '80%', margin: '20px auto'}}>
+                        <Form style={{ width: '80%', margin: '20px auto' }}>
+                            <Grid.Row>
+                                <Grid.Column width={8}>
+                                    <Form.Input fluid required label='First name' placeholder='First name' style={{ margin: '15px 0' }} />
+                                </Grid.Column>
+                                <Grid.Column width={8}>
+                                    <Form.Input fluid required label='Last name' placeholder='Last name' style={{ margin: '15px 0' }} />
+                                </Grid.Column>
+                            </Grid.Row>
                             <Grid.Row>
                                 <Grid.Column width={16}>
-                                    <Form.Input fluid required label='First name' placeholder='First name' style={{ width: '100%', margin: '15px 0' }} />
-                                    <Form.Input fluid required label='Last name' placeholder='Last name' style={{ width: '100%', margin: '15px 0' }} />
-                                    <Form.Input fluid required label='Email' placeholder='Email' style={{ width: '100%', margin: '15px 0' }} />
+                                    <Form.Input fluid required label='Email' placeholder='Email' style={{ margin: '15px 0' }} />
                                 </Grid.Column>
                                 <Grid.Column width={16} style={{ maxHeight: '100%', }}>
                                     <Form.TextArea placeholder='Leave a Message' style={{ margin: '0px 0px 50px 0px' }} />
-                                    <Form.Button type='submit' style={{ width: '100%', maxWidth: '100%' }}>Submit</Form.Button>
+                                    <Form.Button type='submit' style={{ width: '100%'}}>Submit</Form.Button>
                                 </Grid.Column>
                             </Grid.Row>
                         </Form>

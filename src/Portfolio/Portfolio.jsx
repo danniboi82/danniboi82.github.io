@@ -9,6 +9,7 @@ import Port1 from './Images/simpsonsClicky.png';
 import Port2 from './Images/burger.png';
 import Port3 from './Images/triviaGame.png';
 import Port4 from './Images/TechCheck.png';
+import './Portfolio.css';
 
 class portfolio extends Component {
     render() {
@@ -17,116 +18,50 @@ class portfolio extends Component {
                 <Segment style={{ padding: '8em 0em', textAlign: 'center', backgroundColor: '#D3D3D3' }} vertical>
                     <Container >
                         <Grid>
-                            <Grid.Column width={8}>
-                                <Item>
-                                    <Item.Image as='a' href='https://danoh82-clicky.herokuapp.com/' size='large' src={Port1} />
-                                    <Item.Content>
-                                        <Item.Description>
-                                            <p>Simple memory game, goal is not to click same picture twice</p>
-                                            <p>
-                                                Node, React, Material-UI 
-                                            </p>
-                                        </Item.Description>
-                                    </Item.Content>
-                                </Item>
+                            <Grid.Column computer={8} widescreen={8} tablet={8} largeScreen={8} mobile={16}>
+                                <a href="https://danoh82-clicky.herokuapp.com/" target="_blank">
+                                    <div className="PortContainer"
+                                        style={{ backgroundImage: `url(${Port1})` }} >
+                                        <div className="textOverImage">
+                                            <h1>Simpsons Memory Game</h1>
+                                            <p><b>Goal:</b> Try NOT to click the same picture twice!</p>
+                                            <p>Made using Node React Material </p>
+                                        </div>
+                                    </div>
+                                </a>
                             </Grid.Column>
-                            <Grid.Column width={8}>
-                            <Item.Header>Trivia</Item.Header>
-                                <Item>
-                                    <Item.Image as='a' href='https://danoh82-triviagame.herokuapp.com/' size='large' src={Port3} />
-                                    <Item.Content>
-                                        <Item.Description>
-                                            <p>Description</p>
-                                            <p>
-                                                Technologies used
-                                            </p>
-                                        </Item.Description>
-                                    </Item.Content>
-                                </Item>
+                            <Grid.Column computer={8} widescreen={8} tablet={8} largeScreen={8} mobile={16}>
+                                <a href="https://danoh82-triviagame.herokuapp.com" target="_blank">
+
+                                    <div className="PortContainer"
+                                        style={{ backgroundImage: `url(${Port2})` }} >
+                                        <div className="textOverImage">
+                                            IS THIS WORKING???
+                                        </div>
+                                    </div>
+                                </a>
                             </Grid.Column>
-                            <Grid.Column width={8}>
-                                <Item>
-                                    <Item.Image as='a' href='http://danoh82-burgerbuilder.herokuapp.com/' size='large' src={Port2} />
-                                    <Item.Content>
-                                        <Item.Header as='a'>Title w/ Link</Item.Header>
-                                        <Item.Description>
-                                            <p>Description</p>
-                                            <p>
-                                                Technologies used
-                                            </p>
-                                        </Item.Description>
-                                    </Item.Content>
-                                </Item>
+                            <Grid.Column computer={8} widescreen={8} tablet={8} largeScreen={8} mobile={16}>
+                                <a href="http://danoh82-burgerbuilder.herokuapp.com/" target="_blank">
+
+                                    <div className="PortContainer"
+                                        style={{ backgroundImage: `url(${Port3})` }} >
+                                        <div className="textOverImage">
+                                            IS THIS WORKING???
+                                        </div>
+                                    </div>
+                                </a>
                             </Grid.Column>
-                            <Grid.Column width={8}>
-                                <Item>
-                                <Item.Image as='a' href='http://techcheck.herokuapp.com/' size='large' src={Port4} />
-                                    <Item.Content>
-                                        <Item.Header as='a'>Title w/ Link</Item.Header>
-                                        <Item.Description>
-                                            <p>Description</p>
-                                            <p>
-                                                Technologies used
-                                            </p>
-                                        </Item.Description>
-                                    </Item.Content>
-                                </Item>
-                            </Grid.Column>
-                            <Grid.Column width={8}>
-                                <Item>
-                                    <Item.Image size='small' src='http://breezeworks-corporate-website.s3.amazonaws.com/wp-content/uploads/2014/02/webiste.png' />
-                                    <Item.Content>
-                                        <Item.Header as='a'>Title w/ Link</Item.Header>
-                                        <Item.Description>
-                                            <p>Description</p>
-                                            <p>
-                                                Technologies used
-                                            </p>
-                                        </Item.Description>
-                                    </Item.Content>
-                                </Item>
-                            </Grid.Column>
-                            <Grid.Column width={8}>
-                                <Item>
-                                    <Item.Image size='small' src='http://breezeworks-corporate-website.s3.amazonaws.com/wp-content/uploads/2014/02/webiste.png' />
-                                    <Item.Content>
-                                        <Item.Header as='a'>Title w/ Link</Item.Header>
-                                        <Item.Description>
-                                            <p>Description</p>
-                                            <p>
-                                                Technologies used
-                                            </p>
-                                        </Item.Description>
-                                    </Item.Content>
-                                </Item>
-                            </Grid.Column>
-                            <Grid.Column width={8}>
-                                <Item>
-                                    <Item.Image size='small' src='http://breezeworks-corporate-website.s3.amazonaws.com/wp-content/uploads/2014/02/webiste.png' />
-                                    <Item.Content>
-                                        <Item.Header as='a'>Title w/ Link</Item.Header>
-                                        <Item.Description>
-                                            <p>Description</p>
-                                            <p>
-                                                Technologies used
-                                            </p>
-                                        </Item.Description>
-                                    </Item.Content>
-                                </Item>
-                            </Grid.Column>
-                            <Grid.Column width={8}>
-                                <Item>
-                                    <Item.Image size='small' src='http://breezeworks-corporate-website.s3.amazonaws.com/wp-content/uploads/2014/02/webiste.png' />
-                                    <Item.Content>
-                                        <Item.Header as='a'>Title w/ Link</Item.Header>
-                                        <Item.Description>
-                                            <p>Description</p>
-                                            <p>
-                                                Technologies used
-                                            </p>
-                                        </Item.Description>
-                                    </Item.Content>
-                                </Item>
+                            <Grid.Column computer={8} widescreen={8} tablet={8} largeScreen={8} mobile={16}>
+                                <a href="http://techcheck.herokuapp.com/" target="_blank">
+                                    <div className="PortContainer"
+                                        style={{ backgroundImage: `url(${Port4})` }}
+                                    >
+                                        <div className="textOverImage">
+                                            IS THIS WORKING???
+                                        </div>
+                                    </div>
+                                </a>
                             </Grid.Column>
                         </Grid>
 
