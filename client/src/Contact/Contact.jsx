@@ -11,37 +11,44 @@ import axios from '../axios-contactForm';
 
 class ContactForm extends Component {
     state = {
-        contactFormId: {
             firstName: '',
             lastName: '',
             eMail: '',
             message: '',
-        }
     }
 
     handleChange = (event) => {
         this.setState({
-            contactFormId: {
-                firstName: event.target.first,
-                lastName: event.target.last,
-                eMail: event.target.email,
-                message: event.target.msg,
-            }
+            [event.target.name] : event.target.value
+        })
+    }
+
+    clearInputFields = () => {
+        this.setState({
+            firstName: '',
+            lastName: '',
+            eMail: '',
+            message: '',
         })
     }
 
     onSubmit = (event) => {
         event.preventDefault();
-        console.log('is this working?');
-        // const contactMe = {
-        //     firstName : this.state.contactFormId.firstName,
-        //     lastName : this.state.contactFormId.lastName,
-        //     eMail: this.state.contactFormId.eMail,
-        //     message : this.state.contactFormId.message
-        // }
-        // axios.post('/contact', contactMe)
-        //     .then(response => console.log(response))
-        //     .catch(error => console.log(error));
+        console.log(this.state);
+        const contactMe = {
+            firstName : this.state.firstName,
+            lastName : this.state.lastName,
+            eMail: this.state.eMail,
+            message : this.state.message
+        }
+        axios.post('/contact.json', contactMe)
+            .then(response => {
+                if(response.status === 200){
+                    //clear the forms
+                    this.clearInputFields();
+                }
+            })
+            .catch(error => console.log(error));
     }
 
     render() {
@@ -53,7 +60,8 @@ class ContactForm extends Component {
                             <Grid.Row>
                                 <Grid.Column width={8}>
                                     <Form.Input fluid required
-                                        value={this.state.contactFormId.firstName}
+                                        name='firstName'
+                                        value={this.state.firstName}
                                         onChange={this.handleChange}
                                         label='First name'
                                         placeholder='First name'
@@ -63,7 +71,8 @@ class ContactForm extends Component {
                                 </Grid.Column>
                                 <Grid.Column width={8}>
                                     <Form.Input fluid required
-                                        value={this.state.contactFormId.lastName}
+                                        name='lastName'
+                                        value={this.state.lastName}
                                         onChange={this.handleChange}
                                         label='Last name'
                                         placeholder='Last name'
@@ -75,7 +84,8 @@ class ContactForm extends Component {
                             <Grid.Row>
                                 <Grid.Column width={16}>
                                     <Form.Input fluid required
-                                        value={this.state.contactFormId.eMail}
+                                        name='eMail'
+                                        value={this.state.eMail}
                                         onChange={this.handleChange}
                                         label='Email'
                                         placeholder='Email'
@@ -85,7 +95,8 @@ class ContactForm extends Component {
                                 </Grid.Column>
                                 <Grid.Column width={16} style={{ maxHeight: '100%', }}>
                                     <Form.TextArea
-                                        value={this.state.contactFormId.message}
+                                        name='message'
+                                        value={this.state.message}
                                         onChange={this.handleChange}
                                         placeholder='Leave a Message'
                                         style={{ margin: '0px 0px 50px 0px' }} />
