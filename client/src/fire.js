@@ -9,7 +9,6 @@ import firebase from 'firebase';
         storageBucket: "danohhomepage.appspot.com",
         messagingSenderId: "697418251661"
       };
-      firebase.initializeApp(config);
 
 const fire = firebase.initializeApp(config);
 

@@ -42,7 +42,7 @@ export default class Navbar extends Component {
                         textAlign='center'
                         vertical={true}
                         className='NavbarSeg'
-                        style={{ backgroundImage: `url(${BG1})`, backgroundSize: '100% 100%', backgroundRepeat: 'no-repeat',  maxWidth: '100%', backgroundAttachment: 'fixed' }}
+                        style={{ backgroundImage: `url(${BG1})`, backgroundSize: '100% 100%', backgroundRepeat: 'no-repeat', maxWidth: '100%', backgroundAttachment: 'fixed' }}
                     >
                         <Container >
                             <Menu inverted pointing secondary size='large'>
@@ -52,31 +52,35 @@ export default class Navbar extends Component {
                                 <Menu.Item position='right'>
                                     <Menu.Item
                                         name='top'
+                                        href='#Home'
                                         active={activeItem === 'top'}
                                         onClick={this.handleItemClick}>
                                         <Icon name='home' style={{ position: 'relative', bottom: '2px' }} />
-                                        <a href='#Home'>Home</a>
+                                        Home
                                     </Menu.Item>
                                     <Menu.Item
+                                        href='#About'
                                         name='about'
                                         active={activeItem === 'about'}
                                         onClick={this.handleItemClick}>
                                         <Icon name='user outline' size='small' />
-                                        <a href='#About'>About</a>
+                                        About
                                     </Menu.Item>
                                     <Menu.Item
+                                        href='#Portfolio'
                                         name='portfolio'
                                         active={activeItem === 'portfolio'}
                                         onClick={this.handleItemClick}>
                                         <Icon name='code' size='small' />
-                                        <a href='#Portfolio'>Portfolio</a>
+                                        Portfolio
                                     </Menu.Item>
                                     <Menu.Item
                                         name='contact'
+                                        href='#Contact'
                                         active={activeItem === 'contact'}
                                         onClick={this.handleItemClick}>
                                         <Icon name='mail outline' size='small' />
-                                        <a href='#Contact'>Contact</a>
+                                        Contact
                                     </Menu.Item>
                                 </Menu.Item>
                             </Menu>

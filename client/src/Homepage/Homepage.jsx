@@ -44,12 +44,12 @@ export default class HomepageLayout extends Component {
                                 </div>
                                 <div className='Intro'>
                                     <Header as='h3' style={{ fontSize: '2em' }}>Web DEV Skills</Header>
-                                    <p style={{ fontSize: '1.33em' }}>
+                                    <div style={{ fontSize: '1.33em' }}>
                                         <div className='IntroP'>Experienced in : </div> 
                                         <div className='IntroSkills'>HTML, CSS (Less/Sass), JavaScript(ES5, ES6), jQuery, Bootstrap, MERN stack (MongoDB, Express, React, Node), MySQL, Sequelize, Material-UI, Sematic-UI, NPM, GIT, Paypal</div>
                                         <div className='IntroP'>Currently learning :</div>
                                         <div className='IntroSkills'> Angular, ES7, Redux, Vue, AWS </div>
-                                    </p>
+                                    </div>
                                 </div>
                             </Grid.Column>
                         </Grid.Row>
