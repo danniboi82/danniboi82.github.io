@@ -5472,6 +5472,10 @@ react-fontawesome@^1.6.1:
   dependencies:
     prop-types "^15.5.6"
 
+react-mailto.js@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-mailto.js/-/react-mailto.js-1.1.0.tgz#f9c198557158328b122a2ca5dbb65a6b2ce30436"
+
 react-router-dom@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.2.2.tgz#c8a81df3adc58bba8a76782e946cbd4eae649b8d"
