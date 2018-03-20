@@ -19,7 +19,7 @@ class portfolio extends Component {
                     <Container >
                         <Grid>
                             <Grid.Column computer={8} widescreen={8} tablet={8} largeScreen={8} mobile={16}>
-                                <a href="https://danoh82-clicky.herokuapp.com/" target="_blank">
+                                <a href="https://danoh82-clicky.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                     <div className="PortContainer"
                                         style={{ backgroundImage: `url(${Port1})` }} >
                                         <div className="textOverImage">
@@ -31,34 +31,43 @@ class portfolio extends Component {
                                 </a>
                             </Grid.Column>
                             <Grid.Column computer={8} widescreen={8} tablet={8} largeScreen={8} mobile={16}>
-                                <a href="https://danoh82-triviagame.herokuapp.com" target="_blank">
+                                <a href="https://danoh82-triviagame.herokuapp.com" target="_blank" rel="noopener noreferrer">
 
                                     <div className="PortContainer"
                                         style={{ backgroundImage: `url(${Port2})` }} >
                                         <div className="textOverImage">
-                                            IS THIS WORKING???
+                                            <h1>Title</h1>
+                                            <p>Made with:</p>
+                                            <p>What I did... Role?</p>
+                                            <p>Game description</p>
                                         </div>
                                     </div>
                                 </a>
                             </Grid.Column>
                             <Grid.Column computer={8} widescreen={8} tablet={8} largeScreen={8} mobile={16}>
-                                <a href="http://danoh82-burgerbuilder.herokuapp.com/" target="_blank">
+                                <a href="http://danoh82-burgerbuilder.herokuapp.com/" target="_blank" rel="noopener noreferrer">
 
                                     <div className="PortContainer"
                                         style={{ backgroundImage: `url(${Port3})` }} >
                                         <div className="textOverImage">
-                                            IS THIS WORKING???
+                                        <h1>Title</h1>
+                                            <p>Made with:</p>
+                                            <p>What I did... Role?</p>
+                                            <p>Game description</p>
                                         </div>
                                     </div>
                                 </a>
                             </Grid.Column>
                             <Grid.Column computer={8} widescreen={8} tablet={8} largeScreen={8} mobile={16}>
-                                <a href="http://techcheck.herokuapp.com/" target="_blank">
+                                <a href="http://techcheck.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                                     <div className="PortContainer"
                                         style={{ backgroundImage: `url(${Port4})` }}
                                     >
                                         <div className="textOverImage">
-                                            IS THIS WORKING???
+                                        <h1>Title</h1>
+                                            <p>Made with:</p>
+                                            <p>What I did... Role?</p>
+                                            <p>Game description</p>
                                         </div>
                                     </div>
                                 </a>

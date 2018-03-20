@@ -32,6 +32,7 @@ export default class HomepageLayout extends Component {
                                     rounded
                                     size='large'
                                     src={profilepic}
+                                    centered
                                 />
                             </Grid.Column>
                             <Grid.Column width={8}>

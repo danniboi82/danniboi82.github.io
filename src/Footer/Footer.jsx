@@ -8,37 +8,38 @@ import {
     Image,
     List,
     Segment,
+    Icon
 } from 'semantic-ui-react';
 
 const footer = () => {
     return (
         <div>
             <Segment inverted vertical style={{ padding: '5em 0em' }}>
-                <Container>
+                <Container textAlign='center'>
                     <Grid divided inverted stackable>
                         <Grid.Row>
-                            <Grid.Column width={3}>
-                                <Header inverted as='h4' content='About' />
+                            <Grid.Column width={5}>
+                                <Header inverted as='h4' content='Sitemap' />
                                 <List link inverted>
-                                    <List.Item as='a'>Sitemap</List.Item>
-                                    <List.Item as='a'>Contact Us</List.Item>
-                                    <List.Item as='a'>Religious Ceremonies</List.Item>
-                                    <List.Item as='a'>Gazebo Plans</List.Item>
+                                    <List.Item as='a'>Home</List.Item>
+                                    <List.Item as='a'>About</List.Item>
+                                    <List.Item as='a'>Portfolio</List.Item>
+                                    <List.Item as='a'>Contact</List.Item>
                                 </List>
                             </Grid.Column>
-                            <Grid.Column width={3}>
-                                <Header inverted as='h4' content='Services' />
+                            <Grid.Column width={6}>
+                                <Header inverted as='h4'>
+                                <div>吳孝天 LLC.</div>
+                                <br/>
+                                <div>Copyright <Icon name='copyright'/> 2018 </div>
+                                </Header>
+                            </Grid.Column>
+                            <Grid.Column width={5}>
+                                <Header as='h4' inverted>Contact Me!</Header>
                                 <List link inverted>
-                                    <List.Item as='a'>Banana Pre-Order</List.Item>
-                                    <List.Item as='a'>DNA FAQ</List.Item>
-                                    <List.Item as='a'>How To Access</List.Item>
-                                    <List.Item as='a'>Favorite X-Men</List.Item>
-                                </List>
-                            </Grid.Column>
-                            <Grid.Column width={7}>
-                                <Header as='h4' inverted>Footer Header</Header>
-                                <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
-                            </Grid.Column>
+                                    <List.Item >Phone : (714) 504-0820</List.Item>
+                                    <List.Item >Email : daniel.oh1228@gmail.com</List.Item>
+                                </List>                            </Grid.Column>
                         </Grid.Row>
                     </Grid>
                 </Container>
