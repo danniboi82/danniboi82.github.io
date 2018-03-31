@@ -14,7 +14,7 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
-import Heading from '../Heading/Heading';
+import MobileHeading from '../Heading/MobileHeading';
 import './MobileContainer.css'
 import BG1 from '../../../../backgroundImage/workstation1.jpg';
 
@@ -93,7 +93,7 @@ class MobileContainer extends Component {
                   </Menu.Item>
                 </Menu>
               </Container>
-              <Heading mobile />
+              <MobileHeading mobile />
             </Segment>
 
             {children}

@@ -23,6 +23,7 @@ class DesktopContainer extends Component {
 
   hideFixedMenu = () => this.setState({ fixed: false })
   showFixedMenu = () => this.setState({ fixed: true })
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
     const { children } = this.props
@@ -40,44 +41,53 @@ class DesktopContainer extends Component {
             style={{ backgroundImage: `url(${BG1})`, backgroundSize: '100% 100%', backgroundRepeat: 'no-repeat', maxWidth: '100%', backgroundAttachment: 'fixed' }}
           >
             <Container >
-              <Menu inverted pointing secondary size='large'>
-                <Menu.Item>
-                  <h1>ㅇㅎㅊ</h1>
-                </Menu.Item>
-                <Menu.Item position='right'>
-                  <Menu.Item
-                    name='top'
-                    href='#Home'
-                    active={activeItem === 'top'}
-                    onClick={this.handleItemClick}>
-                    <Icon name='home' style={{ position: 'relative', bottom: '2px' }} />
-                    Home
+              <Menu
+                className='NavbarDiv'
+                fixed={fixed ? 'top' : null}
+                inverted={!fixed}
+                pointing={!fixed}
+                borderless
+                secondary={!fixed}
+                size='large'>
+                <Container>
+                  <Menu.Item>
+                    <h1>ㅇㅎㅊ</h1>
+                  </Menu.Item>
+                  <Menu.Item position='right'>
+                    <Menu.Item
+                      name='top'
+                      href='#Top'
+                      active={activeItem === 'top'}
+                      onClick={this.handleItemClick}>
+                      <Icon name='home' style={{ position: 'relative', bottom: '2px' }} />
+                      Home
                                     </Menu.Item>
-                  <Menu.Item
-                    href='#About'
-                    name='about'
-                    active={activeItem === 'about'}
-                    onClick={this.handleItemClick}>
-                    <Icon name='user outline' size='small' />
-                    About
+                    <Menu.Item
+                      href='#About'
+                      name='about'
+                      active={activeItem === 'about'}
+                      onClick={this.handleItemClick}>
+                      <Icon name='user outline' size='small' />
+                      About
                                     </Menu.Item>
-                  <Menu.Item
-                    href='#Portfolio'
-                    name='portfolio'
-                    active={activeItem === 'portfolio'}
-                    onClick={this.handleItemClick}>
-                    <Icon name='code' size='small' />
-                    Portfolio
+                    <Menu.Item
+                      href='#Portfolio'
+                      name='portfolio'
+                      active={activeItem === 'portfolio'}
+                      onClick={this.handleItemClick}>
+                      <Icon name='code' size='small' />
+                      Portfolio
                                     </Menu.Item>
-                  <Menu.Item
-                    name='contact'
-                    href='#Contact'
-                    active={activeItem === 'contact'}
-                    onClick={this.handleItemClick}>
-                    <Icon name='mail outline' size='small' />
-                    Contact
+                    <Menu.Item
+                      name='contact'
+                      href='#Contact'
+                      active={activeItem === 'contact'}
+                      onClick={this.handleItemClick}>
+                      <Icon name='mail outline' size='small' />
+                      Contact
                                     </Menu.Item>
-                </Menu.Item>
+                  </Menu.Item>
+                </Container>
               </Menu>
             </Container>
             <Heading />
