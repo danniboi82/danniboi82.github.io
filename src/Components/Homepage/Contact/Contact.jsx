@@ -7,7 +7,7 @@ import {
     TextArea,
     Icon,
 } from 'semantic-ui-react';
-import axios from '../axios-contactForm';
+import axios from '../../../axios-contactForm';
 
 class ContactForm extends Component {
     state = {

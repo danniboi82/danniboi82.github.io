@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import profilepic from '../backgroundImage/profilePic.jpg';
+import profilepic from '../../../backgroundImage/profilePic.jpg';
 import {
     Button,
     Container,
@@ -10,12 +10,12 @@ import {
     List,
     Segment,
 } from 'semantic-ui-react';
-import codingLogo from '../backgroundImage/technology.svg';
-import './Homepage.css';
+import codingLogo from '../../../backgroundImage/technology.svg';
+import './Intro.css';
 
 
 
-export default class HomepageLayout extends Component {
+export default class Intro extends Component {
     state = {}
 
     render() {
