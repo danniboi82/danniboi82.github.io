@@ -38,8 +38,8 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 
 
 const Homepage = () => (
-  <ResponsiveContainer id="About">
-    <ScrollableAnchor>
+  <ResponsiveContainer>
+    <ScrollableAnchor id="About">
       <Intro />
     </ScrollableAnchor>
     <ScrollableAnchor id="Portfolio">
