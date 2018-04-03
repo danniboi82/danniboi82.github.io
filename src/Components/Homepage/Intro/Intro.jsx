@@ -44,7 +44,7 @@ export default class Intro extends Component {
                                     </p>
                                 </div>
                                 <div className='Intro'>
-                                    <Header as='h3' style={{ fontSize: '2em' }}>Web DEV Skills</Header>
+                                    <Header as='h3' style={{ fontSize: '2em' }}>Web Dev Skills</Header>
                                     <div style={{ fontSize: '1.33em' }}>
                                         <div className='IntroP'>Experienced in : </div> 
                                         <div className='IntroSkills'>HTML, CSS (Less/Sass), JavaScript(ES5, ES6), jQuery, Bootstrap, MERN stack (MongoDB, Express, React, Node), MySQL, Sequelize, Material-UI, Sematic-UI, NPM, GIT, Paypal</div>
