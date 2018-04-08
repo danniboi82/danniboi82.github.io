@@ -68,25 +68,27 @@ export default class Intro extends Component {
                                 </div>
                             </Grid.Column>
                         </Grid.Row>
-                        <Grid.Row style={{ margin: '50px auto',  }}>
+                        <Grid.Row style={{ margin: '50px auto', }}>
                             <Grid.Column textAlign='center'>
                                 <Button basic color='blue' size='huge' href='#Portfolio'>WebDev Portfolio</Button>
                             </Grid.Column>
                         </Grid.Row>
-                        <Container>
-                            <Grid.Row style={{ textAlign: 'center', marginTop: '50px' }}>
+                        <Grid.Row style={{ textAlign: 'center', marginTop: '50px' }}>
+
+                            <Container className='LogosWrapper'>
                                 <Image.Group className='TechUsedDiv'>
+
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={reactLogo} />
+                                                <Image src={bootstrapLogo} size='small' />
                                             </div>
                                         </div>
                                     </div>
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={bootstrapLogo} size='small' />
+                                                <Image src={nodejsLogo} size='small' />
                                             </div>
                                         </div>
                                     </div>
@@ -116,7 +118,7 @@ export default class Intro extends Component {
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={handlebars} size='small' href='#Portfolio'/>
+                                                <Image src={handlebars} className='Exhb' size='small'/>
                                             </div>
                                         </div>
                                     </div>
@@ -137,7 +139,7 @@ export default class Intro extends Component {
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={materialUiLogo} size='small' />
+                                                <Image src={materialUiLogo} className='MatUI' size='small' />
                                             </div>
                                         </div>
                                     </div>
@@ -157,17 +159,18 @@ export default class Intro extends Component {
                                             </div>
                                         </div>
                                     </div>
+
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={nodejsLogo} size='small' />
+                                                <Image src={reactNatLogo} size='small' />
                                             </div>
                                         </div>
                                     </div>
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={reactNatLogo} size='small' />
+                                                <Image src={reactLogo} />
                                             </div>
                                         </div>
                                     </div>
@@ -186,8 +189,8 @@ export default class Intro extends Component {
                                         </div>
                                     </div>
                                 </Image.Group>
-                            </Grid.Row>
-                        </Container>
+                            </Container>
+                        </Grid.Row>
                     </Grid>
                 </Segment>
 
