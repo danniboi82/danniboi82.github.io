@@ -68,69 +68,129 @@ export default class Intro extends Component {
                                 </div>
                             </Grid.Column>
                         </Grid.Row>
-                        <Grid.Row style={{ margin: '50px auto' }}>
+                        <Grid.Row style={{ margin: '50px auto', }}>
                             <Grid.Column textAlign='center'>
-                                <Button size='huge'><a href='#Portfolio'>WebDev Portfolio</a></Button>
+                                <Button basic color='blue' size='huge' href='#Portfolio'>WebDev Portfolio</Button>
                             </Grid.Column>
                         </Grid.Row>
-                        <Container>
-                            <Grid.Row style={{ textAlign: 'center', marginTop: '50px' }}>
+                        <Grid.Row style={{ textAlign: 'center', marginTop: '50px' }}>
+
+                            <Container className='LogosWrapper'>
                                 <Image.Group className='TechUsedDiv'>
-                                    <div className='TechCard'>
-                                        <Image src={reactLogo} size='small' className='front' verticalAlign='middle'/>
-                                    </div>
-                                    <div className='TechCard'>
-                                        <Image src={bootstrapLogo} size='small' className='front' />
-                                    </div>
-                                    <div className='TechCard'>
-                                        <Image src={ejsLogo} size='small' className='front' />
-                                        <div className='back'>
-                                            <div className="details">
-                                                Framework Detail
+
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={bootstrapLogo} size='small' />
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='TechCard'>
-                                        <Image src={ES6} size='small' className='front' />
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={nodejsLogo} size='small' />
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className='TechCard'>
-                                        <Image src={handlebars} size='small' className='front' />
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={ejsLogo} size='small' />
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className='TechCard'>
-                                        <Image src={htmlLogo} size='small' className='front' />
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={ES6} size='small' />
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className='TechCard'>
-                                        <Image src={cssLogo} size='small' className='front' />
-                                    </div>
-                                    <div className='TechCard'>
-                                        <Image src={materialUiLogo} size='small' className='front' />
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={expressJsLogo} size='small' />
+                                            </div>
+                                        </div>
                                     </div>
                                 </Image.Group>
                                 <Image.Group className='TechUsedDiv'>
-                                <div className='TechCard'>
-                                        <Image src={mongoDBLogo} size='small' className='front' />
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={handlebars} className='Exhb' size='small'/>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className='TechCard'>
-                                        <Image src={mySqlLogo} size='small' className='front' />
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={htmlLogo} size='small' />
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className='TechCard'>
-                                        <Image src={nodejsLogo} size='small' className='front' />
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={cssLogo} size='small' />
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className='TechCard'>
-                                        <Image src={reactNatLogo} size='small' className='front' />
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={materialUiLogo} className='MatUI' size='small' />
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className='TechCard'>
-                                        <Image src={semanticLogo} size='small' className='front' />
-                                    </div>
-                                    <div className='TechCard'>
-                                        <Image src={sequelizeLogo} size='small' className='front' />
-                                    </div>
-                                    <div className='TechCard'>
-                                        <Image src={expressJsLogo} size='small' className='front' />
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={mongoDBLogo} size='small' />
+                                            </div>
+                                        </div>
                                     </div>
                                 </Image.Group>
-                            </Grid.Row>
-                        </Container>
+                                <Image.Group className='TechUsedDiv'>
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={mySqlLogo} size='small' />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={reactNatLogo} size='small' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={reactLogo} />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={semanticLogo} size='small' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={sequelizeLogo} size='small' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Image.Group>
+                            </Container>
+                        </Grid.Row>
                     </Grid>
                 </Segment>
 
