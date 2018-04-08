@@ -4,6 +4,7 @@ import {
     Grid,
     Segment,
     Item,
+    Icon,
 } from 'semantic-ui-react';
 import Port1 from './Images/simpsonsClicky.png';
 import Port2 from './Images/burger.png';
@@ -23,9 +24,19 @@ class portfolio extends Component {
                                     <div className="PortContainer"
                                         style={{ backgroundImage: `url(${Port1})` }} >
                                         <div className="textOverImage">
-                                            <h1>Simpsons Memory Game</h1>
+                                            <h3>Simpsons Memory Game</h3>
                                             <p><b>Goal:</b> Try NOT to click the same picture twice!</p>
                                             <p>Made using Node React Material </p>
+                                            <Grid column={2}>
+                                                <Grid.Column width={8}>
+                                                    <Icon className='portIcons' name='github' size='big' link='https://github.com/danniboi82/clicky-game'></Icon>
+                                                    <p>Code on Github</p>
+                                                </Grid.Column>
+                                                <Grid.Column width={8}>
+                                                    <Icon className='portIcons' name='tv' size='big' link='https://danoh82-clicky.herokuapp.com/'></Icon>
+                                                    <p>Live Site</p>
+                                                </Grid.Column>
+                                            </Grid>
                                         </div>
                                     </div>
                                 </a>
@@ -40,6 +51,16 @@ class portfolio extends Component {
                                             <p>Made with:</p>
                                             <p>What I did... Role?</p>
                                             <p>Game description</p>
+                                            <Grid column={2}>
+                                                <Grid.Column width={8}>
+                                                    <Icon className='portIcons' name='github' size='big' link='https://github.com/danniboi82/clicky-game'></Icon>
+                                                    <p>Code on Github</p>
+                                                </Grid.Column>
+                                                <Grid.Column width={8}>
+                                                    <Icon className='portIcons' name='tv' size='big' link='https://danoh82-clicky.herokuapp.com/'></Icon>
+                                                    <p>Live Site</p>
+                                                </Grid.Column>
+                                            </Grid>
                                         </div>
                                     </div>
                                 </a>
@@ -50,10 +71,20 @@ class portfolio extends Component {
                                     <div className="PortContainer"
                                         style={{ backgroundImage: `url(${Port3})` }} >
                                         <div className="textOverImage">
-                                        <h1>Title</h1>
+                                            <h1>Title</h1>
                                             <p>Made with:</p>
                                             <p>What I did... Role?</p>
                                             <p>Game description</p>
+                                            <Grid column={2}>
+                                                <Grid.Column width={8}>
+                                                    <Icon className='portIcons' name='github' size='big' link='https://github.com/danniboi82/clicky-game'></Icon>
+                                                    <p>Code on Github</p>
+                                                </Grid.Column>
+                                                <Grid.Column width={8}>
+                                                    <Icon className='portIcons' name='tv' size='big' link='https://danoh82-clicky.herokuapp.com/'></Icon>
+                                                    <p>Live Site</p>
+                                                </Grid.Column>
+                                            </Grid>
                                         </div>
                                     </div>
                                 </a>
@@ -64,10 +95,20 @@ class portfolio extends Component {
                                         style={{ backgroundImage: `url(${Port4})` }}
                                     >
                                         <div className="textOverImage">
-                                        <h1>Title</h1>
+                                            <h1>Title</h1>
                                             <p>Made with:</p>
                                             <p>What I did... Role?</p>
                                             <p>Game description</p>
+                                            <Grid column={2}>
+                                                <Grid.Column width={8}>
+                                                    <Icon className='portIcons' name='github' size='big' link='https://github.com/danniboi82/clicky-game'></Icon>
+                                                    <p>Code on Github</p>
+                                                </Grid.Column>
+                                                <Grid.Column width={8}>
+                                                    <Icon className='portIcons' name='tv' size='big' link='https://danoh82-clicky.herokuapp.com/'></Icon>
+                                                    <p>Live Site</p>
+                                                </Grid.Column>
+                                            </Grid>
                                         </div>
                                     </div>
                                 </a>

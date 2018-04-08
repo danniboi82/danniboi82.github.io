@@ -42,3 +42,8 @@
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
+
+
+.portIcons{
+    font-size: 5px;
+}
