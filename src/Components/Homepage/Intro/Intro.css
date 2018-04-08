@@ -11,3 +11,11 @@
 .IntroSkills{
     font-size: 15px;
 }
+
+.TechUsedDiv{
+    display: flex;
+}
+
+.TechCard{
+    margin: auto
+}
