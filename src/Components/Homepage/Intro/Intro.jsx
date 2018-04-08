@@ -68,9 +68,9 @@ export default class Intro extends Component {
                                 </div>
                             </Grid.Column>
                         </Grid.Row>
-                        <Grid.Row style={{ margin: '50px auto' }}>
+                        <Grid.Row style={{ margin: '50px auto',  }}>
                             <Grid.Column textAlign='center'>
-                                <Button size='huge'><a href='#Portfolio'>WebDev Portfolio</a></Button>
+                                <Button basic color='blue' size='huge' href='#Portfolio'>WebDev Portfolio</Button>
                             </Grid.Column>
                         </Grid.Row>
                         <Container>
@@ -86,91 +86,95 @@ export default class Intro extends Component {
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={bootstrapLogo} size='small'/>
+                                                <Image src={bootstrapLogo} size='small' />
                                             </div>
                                         </div>
                                     </div>
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={ejsLogo} size='small'/>
+                                                <Image src={ejsLogo} size='small' />
                                             </div>
                                         </div>
                                     </div>
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={ES6} size='small'/>
+                                                <Image src={ES6} size='small' />
                                             </div>
                                         </div>
                                     </div>
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={expressJsLogo} size='small'/>
+                                                <Image src={expressJsLogo} size='small' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Image.Group>
+                                <Image.Group className='TechUsedDiv'>
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={handlebars} size='small' href='#Portfolio'/>
                                             </div>
                                         </div>
                                     </div>
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={handlebars} size='small'/>
+                                                <Image src={htmlLogo} size='small' />
                                             </div>
                                         </div>
                                     </div>
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={htmlLogo} size='small'/>
+                                                <Image src={cssLogo} size='small' />
                                             </div>
                                         </div>
                                     </div>
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={cssLogo} size='small'/>
+                                                <Image src={materialUiLogo} size='small' />
                                             </div>
                                         </div>
                                     </div>
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={materialUiLogo} size='small'/>
+                                                <Image src={mongoDBLogo} size='small' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Image.Group>
+                                <Image.Group className='TechUsedDiv'>
+                                    <div className='CardContainer'>
+                                        <div className="Card">
+                                            <div className="Front Side">
+                                                <Image src={mySqlLogo} size='small' />
                                             </div>
                                         </div>
                                     </div>
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={mongoDBLogo} size='small'/>
+                                                <Image src={nodejsLogo} size='small' />
                                             </div>
                                         </div>
                                     </div>
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={mySqlLogo} size='small'/>
+                                                <Image src={reactNatLogo} size='small' />
                                             </div>
                                         </div>
                                     </div>
                                     <div className='CardContainer'>
                                         <div className="Card">
                                             <div className="Front Side">
-                                                <Image src={nodejsLogo} size='small'/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className='CardContainer'>
-                                        <div className="Card">
-                                            <div className="Front Side">
-                                                <Image src={reactNatLogo} size='small'/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className='CardContainer'>
-                                        <div className="Card">
-                                            <div className="Front Side">
-                                                <Image src={semanticLogo} size='small'/>
+                                                <Image src={semanticLogo} size='small' />
                                             </div>
                                         </div>
                                     </div>
