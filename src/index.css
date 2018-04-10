@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|PT+Sans|Poppins|Roboto+Condensed');
+
+/* 
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Poppins', sans-serif; 
+*/
+
 body {
   margin: 0;
   padding: 0;

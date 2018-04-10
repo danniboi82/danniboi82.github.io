@@ -17,6 +17,7 @@ import {
 import Heading from '../Heading/Heading';
 import BG1 from '../../../../backgroundImage/workstation1.jpg';
 import './DesktopContainer.css';
+import { Fade, Flip, Rotate, Zoom, Bounce, Roll } from 'react-reveal';
 
 class DesktopContainer extends Component {
   state = {}
@@ -51,41 +52,52 @@ class DesktopContainer extends Component {
                 size='large'>
                 <Container>
                   <Menu.Item>
-                    <h1>ㅇㅎㅊ</h1>
+                    <Flip timeout={5000}>
+                      <h1>ㅇㅎㅊ</h1>
+                    </Flip>
                   </Menu.Item>
                   <Menu.Item position='right'>
-                    <Menu.Item
-                      name='top'
-                      href='#Top'
-                      active={activeItem === 'top'}
-                      onClick={this.handleItemClick}>
-                      <Icon name='home' style={{ position: 'relative', bottom: '2px' }} />
-                      Home
+                    <Rotate top left duration={2000}>
+                      <Menu.Item
+                        name='top'
+                        href='#Top'
+                        active={activeItem === 'top'}
+                        onClick={this.handleItemClick}>
+                        <Icon name='home' style={{ position: 'relative', bottom: '2px' }} />
+                        Home
                                     </Menu.Item>
-                    <Menu.Item
-                      href='#About'
-                      name='about'
-                      active={activeItem === 'about'}
-                      onClick={this.handleItemClick}>
-                      <Icon name='user outline' size='small' />
-                      About
+                    </Rotate>
+                    <Rotate top left duration={2000}>
+                      <Menu.Item
+                        href='#About'
+                        name='about'
+                        active={activeItem === 'about'}
+                        onClick={this.handleItemClick}>
+                        <Icon name='user outline' size='small' />
+                        About
                                     </Menu.Item>
-                    <Menu.Item
-                      href='#Portfolio'
-                      name='portfolio'
-                      active={activeItem === 'portfolio'}
-                      onClick={this.handleItemClick}>
-                      <Icon name='code' size='small' />
-                      Portfolio
+                    </Rotate>
+
+                    <Rotate top left duration={2000}>
+                      <Menu.Item
+                        href='#Portfolio'
+                        name='portfolio'
+                        active={activeItem === 'portfolio'}
+                        onClick={this.handleItemClick}>
+                        <Icon name='code' size='small' />
+                        Portfolio
                                     </Menu.Item>
-                    <Menu.Item
-                      name='contact'
-                      href='#Contact'
-                      active={activeItem === 'contact'}
-                      onClick={this.handleItemClick}>
-                      <Icon name='mail outline' size='small' />
-                      Contact
+                    </Rotate>
+                    <Rotate top left duration={2000}>
+                      <Menu.Item
+                        name='contact'
+                        href='#Contact'
+                        active={activeItem === 'contact'}
+                        onClick={this.handleItemClick}>
+                        <Icon name='mail outline' size='small' />
+                        Contact
                                     </Menu.Item>
+                    </Rotate>
                   </Menu.Item>
                 </Container>
               </Menu>
@@ -95,7 +107,7 @@ class DesktopContainer extends Component {
         </Visibility>
 
         {children}
-      </Responsive>
+      </Responsive >
     )
   }
 }

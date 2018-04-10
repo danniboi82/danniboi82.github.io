@@ -21,7 +21,7 @@ import Intro from './Intro/Intro';
 import Portfolio from './Portfolio/Portfolio';
 import Footer from './Footer/Footer';
 import ScrollableAnchor from 'react-scrollable-anchor';
-
+import { Fade, Flip, Rotate, Zoom, Bounce, Roll } from 'react-reveal';
 
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
@@ -39,16 +39,22 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 
 const Homepage = () => (
   <ResponsiveContainer>
-    <ScrollableAnchor id="About">
-      <Intro />
-    </ScrollableAnchor>
-    <ScrollableAnchor id="Portfolio">
-      <Portfolio />
-    </ScrollableAnchor>
-    <ScrollableAnchor id="Contact">
-      <Contact />
-    </ScrollableAnchor>
-      <Footer />
+    <Zoom duration={2000}>
+      <ScrollableAnchor id="About">
+        <Intro />
+      </ScrollableAnchor>
+    </Zoom>
+    <Zoom duration={2000}>
+      <ScrollableAnchor id="Portfolio">
+        <Portfolio />
+      </ScrollableAnchor>
+    </Zoom>
+    <Fade right duration={2000}>
+      <ScrollableAnchor id="Contact">
+        <Contact />
+      </ScrollableAnchor>
+    </Fade>
+    <Footer />
   </ResponsiveContainer>
 )
 
