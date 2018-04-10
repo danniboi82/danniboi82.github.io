@@ -20,7 +20,7 @@
     right: 0;
     word-wrap:break-word;
     overflow:hidden;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     color:#fff;
     padding: 50px;
     opacity: 0;
@@ -41,4 +41,21 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+}
+
+
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: white;    
+}
+
+a:focus{
+    color: white;    
+}
+
+a:active{
+    color: white;    
 }
