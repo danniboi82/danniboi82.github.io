@@ -6,6 +6,7 @@ import {
     Form,
     TextArea,
     Icon,
+    Header
 } from 'semantic-ui-react';
 import axios from '../../../axios-contactForm';
 
@@ -54,6 +55,7 @@ class ContactForm extends Component {
     render() {
         return (
             <Segment style={{ padding: '8em 0em', minHeight: '800px' }} vertical>
+            <Header className='title' size='huge' textAlign='center'>Please.. help me help YOU~! </Header>
                 <Container>
                     <Grid container stackable verticalAlign='middle'>
                         <Form style={{ width: '80%', margin: '20px auto' }}>
