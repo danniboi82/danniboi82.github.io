@@ -56,7 +56,7 @@ export default class Intro extends Component {
                             <Grid.Column width={8}>
                                 <Fade right>
                                     <div className='Intro'>
-                                        <Header as='h3' style={{ fontSize: '2em' }}>Who am I?</Header>
+                                        <Header as='h3' className='title' style={{ fontSize: '2em' }}>Who am I?</Header>
                                         <p style={{ fontSize: '1.33em' }}>
                                             <b>Hello there?!</b> First, Welcome to my website. I'm a full stack web developer based in Los Angeles, CA, and while I have a wide knowledge base of many languages, frameworks and libraries, I enjoying working in the MERN stack environment.
                                             Graduate of UC Irvine's full stack development boot camp program and am eager to use skills acquired, while constantly learning more. Have experience in Google's EWOQ and vehicle multimedia (electrical) engineering at Hyundai.
@@ -65,7 +65,7 @@ export default class Intro extends Component {
                                 </Fade>
                                 <Fade right>
                                     <div className='Intro'>
-                                        <Header as='h3' style={{ fontSize: '2em' }}>Web Dev Skills</Header>
+                                        <Header as='h3' className='title' style={{ fontSize: '2em' }}>Web Dev Skills</Header>
                                         <div style={{ fontSize: '1.33em' }}>
                                             <div className='IntroP'>Experienced in : </div>
                                             <div className='IntroSkills'>HTML, CSS (Less/Sass), JavaScript(ES5, ES6), jQuery, Bootstrap, MERN stack (MongoDB, Express, React, Node), MySQL, Sequelize, Material-UI, Sematic-UI, NPM, GIT, Paypal</div>

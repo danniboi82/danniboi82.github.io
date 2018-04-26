@@ -22,6 +22,7 @@ const Heading = ({ mobile }) => (
       as='h1'
       content="Dan Oh"
       inverted
+      className='title'
       style={{ fontSize: '4em', fontWeight: 'normal', marginBottom: 0, marginTop: '3em' }}
     />
     <Header
