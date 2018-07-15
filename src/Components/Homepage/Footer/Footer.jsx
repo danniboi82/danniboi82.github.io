@@ -38,7 +38,7 @@ const footer = () => {
                                 <Header as='h4' inverted>Contact Me!</Header>
                                 <List link inverted>
                                     <List.Item >Phone : (714) 504-0820</List.Item>
-                                    <List.Item >Email : daniel.oh1228@gmail.com</List.Item>
+                                    <List.Item >Email : danocode82@gmail.com</List.Item>
                                 </List>                            </Grid.Column>
                         </Grid.Row>
                     </Grid>

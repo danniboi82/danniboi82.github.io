@@ -1,13 +1,7 @@
 import React, { Component } from 'react'
 import {
-  Button,
   Container,
-  Divider,
-  Grid,
-  Header,
   Icon,
-  Image,
-  List,
   Menu,
   Responsive,
   Segment,
@@ -18,7 +12,7 @@ import Heading from '../Heading/Heading';
 import BG1 from '../../../../backgroundImage/workstation1.jpg';
 import './DesktopContainer.css';
 import { Fade, Flip, Rotate, Zoom, Bounce, Roll } from 'react-reveal';
-
+import Calligraphy from './name_hanmoon(gray).svg';
 class DesktopContainer extends Component {
   state = {}
 
@@ -33,14 +27,15 @@ class DesktopContainer extends Component {
 
     return (
       <Responsive {...Responsive.onlyComputer}>
-        <Visibility once={false} onBottomPassed={this.showFixedMenu} onBottomPassedReverse={this.hideFixedMenu}>
           <Segment
             inverted
             textAlign='center'
             vertical={true}
             className='NavbarSeg'
-            style={{ backgroundImage: `url(${BG1})`, backgroundSize: '100% 100%', backgroundRepeat: 'no-repeat', maxWidth: '100%', backgroundAttachment: 'fixed' }}
+            style={{ height: '100vh', backgroundImage: `url(${BG1})`, backgroundSize: '100% 100%', backgroundRepeat: 'no-repeat', maxWidth: '100%', backgroundAttachment: 'fixed' }}
           >
+          <Visibility once={false} onBottomPassed={this.showFixedMenu} onBottomPassedReverse={this.hideFixedMenu}>
+
             <Container >
               <Menu
                 className='NavbarDiv'
@@ -53,11 +48,10 @@ class DesktopContainer extends Component {
                 <Container>
                   <Menu.Item>
                     <Flip timeout={5000}>
-                      <h1>ㅇㅎㅊ</h1>
+                      <img src={Calligraphy} alt='' style={{width: '120px'}}/>
                     </Flip>
                   </Menu.Item>
                   <Menu.Item position='right'>
-                    <Rotate top left duration={2000}>
                       <Menu.Item
                         name='top'
                         href='#Top'
@@ -66,8 +60,6 @@ class DesktopContainer extends Component {
                         <Icon name='home' style={{ position: 'relative', bottom: '2px' }} />
                         Home
                                     </Menu.Item>
-                    </Rotate>
-                    <Rotate top left duration={2000}>
                       <Menu.Item
                         href='#About'
                         name='about'
@@ -76,9 +68,6 @@ class DesktopContainer extends Component {
                         <Icon name='user outline' size='small' />
                         About
                                     </Menu.Item>
-                    </Rotate>
-
-                    <Rotate top left duration={2000}>
                       <Menu.Item
                         href='#Portfolio'
                         name='portfolio'
@@ -87,8 +76,6 @@ class DesktopContainer extends Component {
                         <Icon name='code' size='small' />
                         Portfolio
                                     </Menu.Item>
-                    </Rotate>
-                    <Rotate top left duration={2000}>
                       <Menu.Item
                         name='contact'
                         href='#Contact'
@@ -97,14 +84,15 @@ class DesktopContainer extends Component {
                         <Icon name='mail outline' size='small' />
                         Contact
                                     </Menu.Item>
-                    </Rotate>
                   </Menu.Item>
                 </Container>
               </Menu>
             </Container>
+            </Visibility>
+
             <Heading />
           </Segment>
-        </Visibility>
+
 
         {children}
       </Responsive >
