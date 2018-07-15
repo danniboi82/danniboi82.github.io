@@ -58,8 +58,8 @@ class portfolio extends Component {
                                             <h3 className="title">The Quiz Show Game</h3>
                                             <h4 className="title">Made with :
                                             </h4>
-                                            <Grid container>
-                                                <Grid.Row container>
+                                            <Grid >
+                                                <Grid.Row >
                                                     <Grid.Column width={4}>
                                                         <Image
                                                             src={jQuery}
@@ -118,8 +118,8 @@ class portfolio extends Component {
                                             <h3 className="title">iEvents - Event Finder</h3>
                                             <h4 className="title">Made with :
                                             </h4>
-                                            <Grid container>
-                                                <Grid.Row container>
+                                            <Grid >
+                                                <Grid.Row >
                                                     <Grid.Column width={4}>
                                                         <Image
                                                             src={bootStrap}
@@ -184,8 +184,8 @@ class portfolio extends Component {
                                             <h3 className="title">Mooch - Share and make $$</h3>
                                             <h4 className="title">Made with :
                                             </h4>
-                                            <Grid container>
-                                                <Grid.Row container>
+                                            <Grid >
+                                                <Grid.Row >
                                                     <Grid.Column width={4}>
                                                         <Image
                                                             src={bootStrap}
@@ -257,8 +257,8 @@ class portfolio extends Component {
                                             <h3 className="title">TechCheck</h3>
                                             <h4 className="title">Made with :
                                             </h4>
-                                            <Grid container>
-                                                <Grid.Row container>
+                                            <Grid >
+                                                <Grid.Row >
                                                     <Grid.Column width={4}>
                                                         <Image
                                                             src={mysql}
