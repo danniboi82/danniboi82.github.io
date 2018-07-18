@@ -9,8 +9,9 @@ import {
     Header
 } from 'semantic-ui-react';
 import Port1 from './Images/mooch-home.png';
-import Port2 from './Images/iEventshp1.png';
-import Port3 from './Images/triviaGame.png';
+import Port5 from './Images/3PuttStartPage.png';
+import Port2 from './Images/iEvents.png';
+import Port3 from './Images/simpsonsClicky.png';
 import Port4 from './Images/TechCheck.png';
 import './Portfolio.css';
 import {
@@ -62,22 +63,23 @@ class portfolio extends Component {
                                             <Grid >
                                                 <Grid.Row >
                                                     <Grid.Column width={4}>
-                                                        <Image
-                                                            src={react}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '28px',
-                                                            margin: '0 auto'
-                                                        }}/>
+                                                        <FontAwesomeIcon icon={react} size="2x" color='#00d8ff'/>
+
                                                     </Grid.Column>
                                                     <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={html5} size="2x" color='darkOrange'/>
+                                                        <FontAwesomeIcon icon={nodeJs} size="2x" color='green'/>
                                                     </Grid.Column>
                                                     <Grid.Column width={4}>
                                                         <FontAwesomeIcon icon={javascript} size="2x" color='yellow'/>
                                                     </Grid.Column>
                                                     <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={css3} size="2x" color='#0D4F8B'/>
+                                                        <Image
+                                                            src={materialUi}
+                                                            style={{
+                                                            height: '31px',
+                                                            width: '28px',
+                                                            margin: '0 auto'
+                                                        }}/>
                                                     </Grid.Column>
                                                 </Grid.Row>
                                             </Grid>
@@ -151,7 +153,7 @@ class portfolio extends Component {
                                             <Grid column={2}>
                                                 <Grid.Column width={8}>
                                                     <a
-                                                        href='https://github.com/danniboi82/burger'
+                                                        href='https://github.com/danniboi82/iEvent-finder'
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         className='portIcons'>
@@ -161,7 +163,7 @@ class portfolio extends Component {
                                                 </Grid.Column>
                                                 <Grid.Column width={8}>
                                                     <a
-                                                        href='https://danoh82-burgerbuilder.herokuapp.com/'
+                                                        href='https://danoh82-ievent.herokuapp.com/'
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         className='portIcons'>
@@ -179,7 +181,7 @@ class portfolio extends Component {
                                     <div
                                         className="PortContainer"
                                         style={{
-                                        backgroundImage: `url(${Port1})`
+                                        backgroundImage: `url(${Port5})`
                                     }}>
                                         <div className="textOverImage">
                                             <h3 className="title">3Putt Maestro</h3>
