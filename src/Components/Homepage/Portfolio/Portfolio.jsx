@@ -33,6 +33,8 @@ import expressJs from '../Intro/Logos/icon-express.svg';
 import mysql from '../Intro/Logos/mysql-5.svg';
 import react from '@fortawesome/fontawesome-free-brands/faReact';
 import materialUi from '../Intro/Logos/material-ui.svg';
+import mongo from '../Intro/Logos/mongoDB.png';
+import semanticUi from '../Intro/Logos/semantic_UI.png';
 
 class portfolio extends Component {
     render() {
@@ -209,9 +211,8 @@ class portfolio extends Component {
                                                     </Grid.Column>
                                                     <Grid.Column width={4}>
                                                         <Image
-                                                            src={mysql}
+                                                            src={mongo}
                                                             style={{
-                                                            height: '31px',
                                                             width: '31px',
                                                             margin: '0 auto'
                                                         }}/>
@@ -226,7 +227,7 @@ class portfolio extends Component {
                                             <Grid column={2}>
                                                 <Grid.Column width={8}>
                                                     <a
-                                                        href='https://github.com/danniboi82/mooch'
+                                                        href='https://github.com/danniboi82/3puttmaestro'
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         className='portIcons'>
@@ -236,7 +237,7 @@ class portfolio extends Component {
                                                 </Grid.Column>
                                                 <Grid.Column width={8}>
                                                     <a
-                                                        href='https://danoh82-moochv2.herokuapp.com/'
+                                                        href='https://threeputtmaestro.herokuapp.com/'
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         className='portIcons'>
@@ -264,7 +265,7 @@ class portfolio extends Component {
                                                 <Grid.Row >
                                                     <Grid.Column width={4}>
                                                         <Image
-                                                            src={bootStrap}
+                                                            src={semanticUi}
                                                             style={{
                                                             height: '31px',
                                                             width: '28px',
