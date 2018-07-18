@@ -7,7 +7,7 @@ import Portfolio from './Portfolio/Portfolio';
 import Footer from './Footer/Footer';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { Fade, Flip, Rotate, Zoom, Bounce, Roll } from 'react-reveal';
-
+import Topbar from './Topbar/Topbar';
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
  * such things.
@@ -23,6 +23,8 @@ import { Fade, Flip, Rotate, Zoom, Bounce, Roll } from 'react-reveal';
 
 
 const Homepage = () => (
+  <div>
+  <Topbar/>
   <ResponsiveContainer>
     <Zoom duration={2000}>
       <ScrollableAnchor id="About">
@@ -41,6 +43,7 @@ const Homepage = () => (
     </Fade>
     <Footer />
   </ResponsiveContainer>
+  </div>
 )
 
 export default Homepage;
