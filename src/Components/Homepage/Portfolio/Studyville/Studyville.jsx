@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-    Grid,
-    Icon,
-    Image,
-} from 'semantic-ui-react';
+import {Grid, Icon, Image} from 'semantic-ui-react';
 import {
     Fade,
     Flip,
@@ -27,6 +23,7 @@ import mongo from '../../Intro/Logos/mongoDB.png';
 import semanticUi from '../../Intro/Logos/semantic_UI.png';
 import wordpress from '@fortawesome/fontawesome-free-brands/faWordpressSimple';
 import studyville from '../Images/studyville.png';
+import elementor from '../../Intro/Logos/elementor.png';
 
 const Studyville = (props) => {
     return (
@@ -42,40 +39,31 @@ const Studyville = (props) => {
                 <Grid >
                     <Grid.Row >
                         <Grid.Column width={4}>
-                            <FontAwesomeIcon icon={wordpress} size="2x" color='gray'/>
-                        </Grid.Column>
-                        <Grid.Column width={4}>
-                            <FontAwesomeIcon icon={react} size="2x" color='#00d8ff'/>
-                        </Grid.Column>
-                        <Grid.Column width={4}>
-                            <FontAwesomeIcon icon={nodeJs} size="2x" color='#009900'/>
+                            <FontAwesomeIcon icon={wordpress} size="2x" color='#00d8ff'/>
                         </Grid.Column>
                         <Grid.Column width={4}>
                             <Image
-                                src={materialUi}
+                                src={elementor}
                                 style={{
                                 height: '31px',
                                 width: '28px',
                                 margin: '0 auto'
                             }}/>
                         </Grid.Column>
+                        <Grid.Column width={4}>
+                            <FontAwesomeIcon icon={html5} size="2x" color='orange'/>
+                        </Grid.Column>
+                        <Grid.Column width={4}>
+                            <FontAwesomeIcon icon={css3} size="2x" color='#00d8ff'/>
+                        </Grid.Column>
                     </Grid.Row>
                 </Grid>
                 <h3 className="title">Links :</h3>
-                <Grid column={2}>
-                    <Grid.Column width={8}>
+                <Grid column={1}>
+
+                    <Grid.Column width={16}>
                         <a
-                            href='https://github.com/danniboi82/TechCheck'
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className='portIcons'>
-                            <Icon name='github' size='big' link></Icon>
-                        </a>
-                        <p>Github</p>
-                    </Grid.Column>
-                    <Grid.Column width={8}>
-                        <a
-                            href='https://techcheck.herokuapp.com/'
+                            href='https://petpharmco.com'
                             target="_blank"
                             rel="noopener noreferrer"
                             className='portIcons'>

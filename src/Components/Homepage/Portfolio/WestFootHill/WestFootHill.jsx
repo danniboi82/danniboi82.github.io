@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-    Grid,
-    Icon,
-    Image,
-} from 'semantic-ui-react';
+import {Grid, Icon, Image} from 'semantic-ui-react';
 import {
     Fade,
     Flip,
@@ -13,8 +9,6 @@ import {
     Roll
 } from 'react-reveal';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import html5 from '@fortawesome/fontawesome-free-brands/faHtml5';
-import css3 from '@fortawesome/fontawesome-free-brands/faCss3';
 import javascript from '@fortawesome/fontawesome-free-brands/faJsSquare';
 import jQuery from '../../Intro/Logos/if_jquery_3069646.svg';
 import nodeJs from '@fortawesome/fontawesome-free-brands/faNodeJs';
@@ -26,7 +20,9 @@ import materialUi from '../../Intro/Logos/material-ui.svg';
 import mongo from '../../Intro/Logos/mongoDB.png';
 import wordpress from '@fortawesome/fontawesome-free-brands/faWordpressSimple';
 import westfoothill from '../Images/WFHVets.png';
-
+import html5 from '@fortawesome/fontawesome-free-brands/faHtml5';
+import css3 from '@fortawesome/fontawesome-free-brands/faCss3';
+import elementor from '../../Intro/Logos/elementor.png';
 
 const WestFootHill = (props) => {
     return (
@@ -42,8 +38,11 @@ const WestFootHill = (props) => {
                 <Grid >
                     <Grid.Row >
                         <Grid.Column width={4}>
+                            <FontAwesomeIcon icon={wordpress} size="2x" color='#00d8ff'/>
+                        </Grid.Column>
+                        <Grid.Column width={4}>
                             <Image
-                                src={mysql}
+                                src={elementor}
                                 style={{
                                 height: '31px',
                                 width: '28px',
@@ -51,37 +50,19 @@ const WestFootHill = (props) => {
                             }}/>
                         </Grid.Column>
                         <Grid.Column width={4}>
-                            <FontAwesomeIcon icon={react} size="2x" color='#00d8ff'/>
+                            <FontAwesomeIcon icon={html5} size="2x" color='orange'/>
                         </Grid.Column>
                         <Grid.Column width={4}>
-                            <FontAwesomeIcon icon={nodeJs} size="2x" color='#009900'/>
-                        </Grid.Column>
-                        <Grid.Column width={4}>
-                            <Image
-                                src={materialUi}
-                                style={{
-                                height: '31px',
-                                width: '28px',
-                                margin: '0 auto'
-                            }}/>
+                            <FontAwesomeIcon icon={css3} size="2x" color='#00d8ff'/>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
                 <h3 className="title">Links :</h3>
-                <Grid column={2}>
-                    <Grid.Column width={8}>
+                <Grid column={1}>
+
+                    <Grid.Column width={16}>
                         <a
-                            href='https://github.com/danniboi82/TechCheck'
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className='portIcons'>
-                            <Icon name='github' size='big' link></Icon>
-                        </a>
-                        <p>Github</p>
-                    </Grid.Column>
-                    <Grid.Column width={8}>
-                        <a
-                            href='https://techcheck.herokuapp.com/'
+                            href='https://petpharmco.com'
                             target="_blank"
                             rel="noopener noreferrer"
                             className='portIcons'>
