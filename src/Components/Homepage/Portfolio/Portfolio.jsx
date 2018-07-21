@@ -35,7 +35,19 @@ import react from '@fortawesome/fontawesome-free-brands/faReact';
 import materialUi from '../Intro/Logos/material-ui.svg';
 import mongo from '../Intro/Logos/mongoDB.png';
 import semanticUi from '../Intro/Logos/semantic_UI.png';
+import wordpress from '@fortawesome/fontawesome-free-brands/faWordpressSimple';
+import westfoothill from './Images/WFHVets.png';
+import studyville from './Images/studyville.png';
+import petpharmco from './Images/PetPharmCo.png';
 
+import Simpsons from './Simpsons/Simpsons';
+import PetPharmCo from './PetPharmCo/PetPharmCo';
+import IEvents from './iEvents/iEvents';
+import ThreePutt from './ThreePutt/ThreePutt';
+import Mooch from './Mooch/Mooch';
+import TechCheck from './TechCheck/TechCheck';
+import Studyville from './Studyville/Studyville';
+import WestFootHill from './WestFootHill/WestFootHill';
 class portfolio extends Component {
     render() {
         return (
@@ -47,544 +59,48 @@ class portfolio extends Component {
                     backgroundColor: '#D3D3D3'
                 }}
                     vertical>
-                    <Header className='title' size='huge'>Some of my work~
+                    <Header className='title' size='huge'>Previous work
                     </Header>
                     <Container >
                         <Grid>
                             <Grid.Column computer={8} widescreen={8} tablet={8} largeScreen={8} mobile={16}>
                                 <Slide left>
-                                    <div
-                                        className="PortContainer"
-                                        style={{
-                                        backgroundImage: `url(${Port3})`
-                                    }}>
-                                        <div className="textOverImage">
-                                            <h3 className="title">Simpsons Click Challenge</h3>
-                                            <h4 className="title">Made with :
-                                            </h4>
-                                            <Grid >
-                                                <Grid.Row >
-                                                    <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={react} size="2x" color='#00d8ff'/>
-
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={nodeJs} size="2x" color='green'/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={javascript} size="2x" color='yellow'/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={materialUi}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '28px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                </Grid.Row>
-                                            </Grid>
-                                            <h3 className="title">Links :</h3>
-                                            <Grid column={2}>
-                                                <Grid.Column width={8}>
-                                                    <a
-                                                        href='https://github.com/danniboi82/clicky-game'
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className='portIcons'>
-                                                        <Icon name='github' size='big' link></Icon>
-                                                    </a>
-                                                    <p>Github</p>
-                                                </Grid.Column>
-                                                <Grid.Column width={8}>
-                                                    <a
-                                                        href='https://danoh82-clicky.herokuapp.com/'
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className='portIcons'>
-                                                        <Icon name='tv' size='big' link></Icon>
-                                                    </a>
-                                                    <p>Live Site</p>
-                                                </Grid.Column>
-                                            </Grid>
-                                        </div>
-                                    </div>
+                                    <Simpsons />
                                 </Slide>
                             </Grid.Column>
                             <Grid.Column computer={8} widescreen={8} tablet={8} largeScreen={8} mobile={16}>
                                 <Slide right>
-                                    <div
-                                        className="PortContainer"
-                                        style={{
-                                        backgroundImage: `url(${Port2})`
-                                    }}>
-                                        <div className="textOverImage">
-                                            <h3 className="title">iEvents - Event Finder</h3>
-                                            <h4 className="title">Made with :
-                                            </h4>
-                                            <Grid >
-                                                <Grid.Row >
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={bootStrap}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '28px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={jQuery}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '28px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={html5} size="2x" color='darkOrange'/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={javascript} size="2x" color='yellow'/>
-                                                    </Grid.Column>
-                                                </Grid.Row>
-                                            </Grid>
-                                            <h3 className="title">Links :</h3>
-                                            <Grid column={2}>
-                                                <Grid.Column width={8}>
-                                                    <a
-                                                        href='https://github.com/danniboi82/iEvent-finder'
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className='portIcons'>
-                                                        <Icon name='github' size='big' link></Icon>
-                                                    </a>
-                                                    <p>Github</p>
-                                                </Grid.Column>
-                                                <Grid.Column width={8}>
-                                                    <a
-                                                        href='https://danoh82-ievent.herokuapp.com/'
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className='portIcons'>
-                                                        <Icon name='tv' size='big' link></Icon>
-                                                    </a>
-                                                    <p>Live Site</p>
-                                                </Grid.Column>
-                                            </Grid>
-                                        </div>
-                                    </div>
+                                   <IEvents />
                                 </Slide>
                             </Grid.Column>
                             <Grid.Column computer={8} widescreen={8} tablet={8} largeScreen={8} mobile={16}>
                                 <Slide left>
-                                    <div
-                                        className="PortContainer"
-                                        style={{
-                                        backgroundImage: `url(${Port5})`
-                                    }}>
-                                        <div className="textOverImage">
-                                            <h3 className="title">3Putt Maestro</h3>
-                                            <h4 className="title">Made with :
-                                            </h4>
-                                            <Grid >
-                                                <Grid.Row >
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={bootStrap}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '28px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={expressJs}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '54px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={mongo}
-                                                            style={{
-                                                            width: '31px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={nodeJs} size="2x" color='#009900'/>
-                                                    </Grid.Column>
-                                                </Grid.Row>
-                                            </Grid>
-
-                                            <h3 className="title">Links :</h3>
-                                            <Grid column={2}>
-                                                <Grid.Column width={8}>
-                                                    <a
-                                                        href='https://github.com/danniboi82/3puttmaestro'
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className='portIcons'>
-                                                        <Icon name='github' size='big' link></Icon>
-                                                    </a>
-                                                    <p>Github</p>
-                                                </Grid.Column>
-                                                <Grid.Column width={8}>
-                                                    <a
-                                                        href='https://threeputtmaestro.herokuapp.com/'
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className='portIcons'>
-                                                        <Icon name='tv' size='big' link></Icon>
-                                                    </a>
-                                                    <p>Live Site</p>
-                                                </Grid.Column>
-                                            </Grid>
-                                        </div>
-                                    </div>
+                                    <ThreePutt />
                                 </Slide>
                             </Grid.Column>
                             <Grid.Column computer={8} widescreen={8} tablet={8} largeScreen={8} mobile={16}>
                                 <Slide right>
-                                    <div
-                                        className="PortContainer"
-                                        style={{
-                                        backgroundImage: `url(${Port1})`
-                                    }}>
-                                        <div className="textOverImage">
-                                            <h3 className="title">Mooch - Sharing is Caring</h3>
-                                            <h4 className="title">Made with :
-                                            </h4>
-                                            <Grid >
-                                                <Grid.Row >
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={semanticUi}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '28px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={expressJs}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '54px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={mysql}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '31px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={nodeJs} size="2x" color='#009900'/>
-                                                    </Grid.Column>
-                                                </Grid.Row>
-                                            </Grid>
-
-                                            <h3 className="title">Links :</h3>
-                                            <Grid column={2}>
-                                                <Grid.Column width={8}>
-                                                    <a
-                                                        href='https://github.com/danniboi82/mooch'
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className='portIcons'>
-                                                        <Icon name='github' size='big' link></Icon>
-                                                    </a>
-                                                    <p>Github</p>
-                                                </Grid.Column>
-                                                <Grid.Column width={8}>
-                                                    <a
-                                                        href='https://danoh82-moochv2.herokuapp.com/'
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className='portIcons'>
-                                                        <Icon name='tv' size='big' link></Icon>
-                                                    </a>
-                                                    <p>Live Site</p>
-                                                </Grid.Column>
-                                            </Grid>
-                                        </div>
-                                    </div>
+                                   <Mooch />
                                 </Slide>
                             </Grid.Column>
                             <Grid.Column computer={8} widescreen={8} tablet={8} largeScreen={8} mobile={16}>
                                 <Slide left>
-                                    <div
-                                        className="PortContainer"
-                                        style={{
-                                        backgroundImage: `url(${Port4})`
-                                    }}>
-                                        <div className="textOverImage">
-                                            <h3 className="title">TechCheck</h3>
-                                            <h4 className="title">Made with :
-                                            </h4>
-                                            <Grid >
-                                                <Grid.Row >
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={mysql}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '28px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={react} size="2x" color='#00d8ff'/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={nodeJs} size="2x" color='#009900'/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={materialUi}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '28px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                </Grid.Row>
-                                            </Grid>
-                                            <h3 className="title">Links :</h3>
-                                            <Grid column={2}>
-                                                <Grid.Column width={8}>
-                                                    <a
-                                                        href='https://github.com/danniboi82/TechCheck'
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className='portIcons'>
-                                                        <Icon name='github' size='big' link></Icon>
-                                                    </a>
-                                                    <p>Github</p>
-                                                </Grid.Column>
-                                                <Grid.Column width={8}>
-                                                    <a
-                                                        href='https://techcheck.herokuapp.com/'
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className='portIcons'>
-                                                        <Icon name='tv' size='big' link></Icon>
-                                                    </a>
-                                                    <p>Live Site</p>
-                                                </Grid.Column>
-                                            </Grid>
-                                        </div>
-                                    </div>
+                                    <TechCheck />
                                 </Slide>
                             </Grid.Column>
                             <Grid.Column computer={8} widescreen={8} tablet={8} largeScreen={8} mobile={16}>
                                 <Slide right>
-                                    <div
-                                        className="PortContainer"
-                                        style={{
-                                        backgroundImage: `url(${Port4})`
-                                    }}>
-                                        <div className="textOverImage">
-                                            <h3 className="title">TechCheck</h3>
-                                            <h4 className="title">Made with :
-                                            </h4>
-                                            <Grid >
-                                                <Grid.Row >
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={mysql}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '28px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={react} size="2x" color='#00d8ff'/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={nodeJs} size="2x" color='#009900'/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={materialUi}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '28px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                </Grid.Row>
-                                            </Grid>
-                                            <h3 className="title">Links :</h3>
-                                            <Grid column={2}>
-                                                <Grid.Column width={8}>
-                                                    <a
-                                                        href='https://github.com/danniboi82/TechCheck'
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className='portIcons'>
-                                                        <Icon name='github' size='big' link></Icon>
-                                                    </a>
-                                                    <p>Github</p>
-                                                </Grid.Column>
-                                                <Grid.Column width={8}>
-                                                    <a
-                                                        href='https://techcheck.herokuapp.com/'
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className='portIcons'>
-                                                        <Icon name='tv' size='big' link></Icon>
-                                                    </a>
-                                                    <p>Live Site</p>
-                                                </Grid.Column>
-                                            </Grid>
-                                        </div>
-                                    </div>
+                                    <Studyville />
                                 </Slide>
                             </Grid.Column>
                             <Grid.Column computer={8} widescreen={8} tablet={8} largeScreen={8} mobile={16}>
                                 <Slide left>
-                                    <div
-                                        className="PortContainer"
-                                        style={{
-                                        backgroundImage: `url(${Port4})`
-                                    }}>
-                                        <div className="textOverImage">
-                                            <h3 className="title">Pet Pharmacy Company</h3>
-                                            <h4 className="title">Made with :
-                                            </h4>
-                                            <Grid >
-                                                <Grid.Row >
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={mysql}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '28px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={react} size="2x" color='#00d8ff'/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={nodeJs} size="2x" color='#009900'/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={materialUi}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '28px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                </Grid.Row>
-                                            </Grid>
-                                            <h3 className="title">Links :</h3>
-                                            <Grid column={2}>
-                                                <Grid.Column width={8}>
-                                                    <a
-                                                        href='https://github.com/danniboi82/TechCheck'
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className='portIcons'>
-                                                        <Icon name='github' size='big' link></Icon>
-                                                    </a>
-                                                    <p>Github</p>
-                                                </Grid.Column>
-                                                <Grid.Column width={8}>
-                                                    <a
-                                                        href='https://techcheck.herokuapp.com/'
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className='portIcons'>
-                                                        <Icon name='tv' size='big' link></Icon>
-                                                    </a>
-                                                    <p>Live Site</p>
-                                                </Grid.Column>
-                                            </Grid>
-                                        </div>
-                                    </div>
+                                    <PetPharmCo />
                                 </Slide>
                             </Grid.Column>
                             <Grid.Column computer={8} widescreen={8} tablet={8} largeScreen={8} mobile={16}>
                                 <Slide right>
-                                    <div
-                                        className="PortContainer"
-                                        style={{
-                                        backgroundImage: `url(${Port4})`
-                                    }}>
-                                        <div className="textOverImage">
-                                            <h3 className="title">WestFootHill Vets</h3>
-                                            <h4 className="title">Made with :
-                                            </h4>
-                                            <Grid >
-                                                <Grid.Row >
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={mysql}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '28px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={react} size="2x" color='#00d8ff'/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <FontAwesomeIcon icon={nodeJs} size="2x" color='#009900'/>
-                                                    </Grid.Column>
-                                                    <Grid.Column width={4}>
-                                                        <Image
-                                                            src={materialUi}
-                                                            style={{
-                                                            height: '31px',
-                                                            width: '28px',
-                                                            margin: '0 auto'
-                                                        }}/>
-                                                    </Grid.Column>
-                                                </Grid.Row>
-                                            </Grid>
-                                            <h3 className="title">Links :</h3>
-                                            <Grid column={2}>
-                                                <Grid.Column width={8}>
-                                                    <a
-                                                        href='https://github.com/danniboi82/TechCheck'
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className='portIcons'>
-                                                        <Icon name='github' size='big' link></Icon>
-                                                    </a>
-                                                    <p>Github</p>
-                                                </Grid.Column>
-                                                <Grid.Column width={8}>
-                                                    <a
-                                                        href='https://techcheck.herokuapp.com/'
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className='portIcons'>
-                                                        <Icon name='tv' size='big' link></Icon>
-                                                    </a>
-                                                    <p>Live Site</p>
-                                                </Grid.Column>
-                                            </Grid>
-                                        </div>
-                                    </div>
+                                    <WestFootHill />
                                 </Slide>
                             </Grid.Column>
 
