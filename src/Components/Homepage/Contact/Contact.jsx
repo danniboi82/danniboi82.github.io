@@ -55,7 +55,7 @@ class ContactForm extends Component {
     render() {
         return (
             <Segment style={{ padding: '8em 0em', minHeight: '800px' }} vertical>
-            <Header className='title' size='huge' textAlign='center'>Please.. help me help YOU~! </Header>
+            <Header className='title' size='huge' textAlign='center'>Let's talk!</Header>
                 <Container>
                     <Grid container stackable verticalAlign='middle'>
                         <Form style={{ width: '80%', margin: '20px auto' }}>
