@@ -1,18 +1,9 @@
 import React from 'react';
 import {
-    Container,
     Grid,
-    Segment,
-    Item,
     Icon,
     Image,
-    Header
 } from 'semantic-ui-react';
-import Port1 from '../Images/mooch-home.png';
-import Port5 from '../Images/3PuttStartPage.png';
-import Port2 from '../Images/iEvents.png';
-import Port3 from '../Images/simpsonsClicky.png';
-import Port4 from '../Images/TechCheck.png';
 import {
     Fade,
     Flip,
@@ -35,9 +26,7 @@ import materialUi from '../../Intro/Logos/material-ui.svg';
 import mongo from '../../Intro/Logos/mongoDB.png';
 import semanticUi from '../../Intro/Logos/semantic_UI.png';
 import wordpress from '@fortawesome/fontawesome-free-brands/faWordpressSimple';
-import westfoothill from '../Images/WFHVets.png';
 import studyville from '../Images/studyville.png';
-import petpharmco from '../Images/PetPharmCo.png';
 
 const Studyville = (props) => {
     return (
