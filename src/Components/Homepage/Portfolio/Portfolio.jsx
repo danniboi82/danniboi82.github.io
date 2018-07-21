@@ -37,7 +37,7 @@ class portfolio extends Component {
                     backgroundColor: '#D3D3D3'
                 }}
                     vertical>
-                    <Header className='title' size='huge'>Previous work
+                    <Header className='title' size='huge'>Portfolio
                     </Header>
                     <Container >
                         <Grid>
