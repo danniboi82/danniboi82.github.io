@@ -42,7 +42,7 @@ export default class Intro extends Component {
                     <Grid container stackable verticalAlign='middle'>
                         <Grid.Row>
                             <Grid.Column floated='left' width={6}>
-                                <Fade right duration={4000}>
+                                <Fade left duration={4000}>
                                     <Image
                                         verticalAlign='top'
                                         bordered
